@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据可视化</title>
+    <link rel="stylesheet" href="./css/空气污染.css" >
+    <script src="js/echarts.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/china.js"></script>
+    <!-- <script src="./js/pyscript.js"></script> -->
+    
+</head>
+<body>
+    <header>
+        <h1>空气污染</h1>
+        <div class="showTime"></div>
+        <script src="./js/time.js"></script>
+    </header> 
+    <!-- 页面主体部分 -->
+    <section class="mainbox">
+        <div class="column">
+            <div id="26bee44fe8fb493da283fe42136b397c" class="chart-container" style="width:700px; height:400px; background-color: rgba(255 255 255 / 20%);"></div>
+                    <script src="./js/碳排放量.js"></script>
+                <div class="penal-bottom"></div>
+            <div>
+                <div id="main" style="width: 750px;height:500px;top:0%;"></div>
+                <script src="./js/实时.js"></script>
+            </div>
+        </div>
+            <!-- 地图模块 -->
+        <div id="1d6f7a1b7f544111a0a30198c606914b" class="chart" style="width:900px; height:700px; ">
+            <!-- 2009-2019全国碳排放量展示图 -->
+            <div id="8b28b419a65e48da8c3deea787474734" class="chart-container" style="width:900px; height:788px; background-color: rgba(255 255 255 / 40%);"></div>
+            <script src="./js/地图.js"></script>
+        </div>
+    </div>
+    </section>
+    <script src="js/flexible.js"></script> 
+    <a href="./index.html"><div class="return"><button class="niceButton5"><span>返回首页</span></button></div></a>
+</body>
+</html>
