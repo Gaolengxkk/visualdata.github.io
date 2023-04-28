@@ -1,0 +1,64 @@
+// 去掉body默认外边距
+body{
+    margin: 0;
+}
+// 给盒子添加宽度 高度 背景色
+.rq{
+    width: 360px;
+    height: 450px;
+    // background-color:red;
+    // 盒子水平居中 设置盒子到浏览器顶部的距离为40px
+    margin: 0px 21px -10px;
+    // 给rq添加边框线
+    border: 2px solid #fff;
+    // 设置四个不同方向的内边距
+    padding: 40px;  
+    right: 10px;
+}
+// 去掉h3自带的默认外边距
+body,h3{
+    margin: 0;
+    // 调整h3字体大小
+    font-size: 20;
+    // 添加向下的外边距
+    margin-bottom: 20px;
+}
+// 去点ul自带样式
+ul{
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+}
+// 给每条新闻设置统一的样式
+.rq ul li{
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    // border: 1px solid red;
+    border-bottom: 1px dotted #ddd;
+}
+// 去掉下划线 并更改文字颜色
+.rq ul li a{
+    text-decoration: none;
+    color: #333;
+}
+// 设置鼠标悬停效果
+.rq ul li a:hover{
+    color: red;
+}
+// 为每个span 添加向右 的外边距
+.rq ul li span{
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+// 为前面3个序号添加不同的颜色
+.col1{
+    color: red;
+}
+.col2{
+    color: #ff5c55;
+}
+.col3{
+    color: #ffa552;
+}

@@ -1,0 +1,177 @@
+// css 初始化 *是通配符的意思 全局可使用
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+}
+/* 声明字体*/
+@font-face {
+  font-family: electronicFont;
+  src: url(../font/DS-DIGIT.TTF);
+}
+// 测试盒子
+.box{
+  width: 1rem;
+  height: 1rem;
+  background-color: red;
+}
+// 设置主页背景
+body{
+  background: url(../images/空气污染1.jpg) no-repeat center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+header{
+  position: relative;
+  height: 1.25rem;
+  background-size: 100% 100%;
+    h1{
+      font-size: .475rem;
+      color: #fff;
+      text-align: center;
+      line-height: 1rem;
+    }
+    .showTime {
+      position: absolute;
+      right: 0.375rem;
+      top: 0;
+      line-height: 0.9375rem;
+      color: #fff;
+      font-size: 0.25rem;
+      font-family: electronicFont;
+    }
+}
+.mainbox{
+  display: flex;
+  min-width: 1024px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0.01rem 0.01rem 0;
+  .column{
+    flex : 0;
+  }
+  // .column:nth-child(2){
+  //   flex : 5;
+  //   margin: 0 1.25rem 1.25rem;
+  // }
+  .penal{
+    position: relative;
+    height: 3.875rem;
+    width: 6.25rem;
+    padding: 0 .1875rem .5rem;
+    border: 1px solid rgba(25, 186, 139, 0.17);
+    margin-bottom: .1875rem;
+    background: url(../images/line\(1\).png) rgba(255, 255, 255, 0.04);
+    &::before{
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-left: 2px solid green;
+      border-top: 2px solid green;
+      content: "";
+    }
+    &::after{
+      position: absolute;
+      top:0;
+      right: 0;
+      width: 10px;
+      height: 10px;
+      border-right: 2px solid green;
+      border-top: 2px solid green;
+      content: "";
+    }
+    .penal-bottom{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      &::before{
+        position: absolute;
+        bottom:0;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border-left: 2px solid green;
+        border-bottom: 2px solid green;
+        content: "";
+      }
+      &::after{
+        position: absolute;
+        bottom:0;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        border-bottom: 2px solid green;
+        border-right: 2px solid green;
+        content: "";
+      }
+    }
+    h2{
+      height: 0.6rem;
+      color: black;
+      line-height: 0.6rem;
+      text-align: center;
+      font-weight: 400;
+    }
+    .chart{
+      height: 5rem;
+    }
+  }
+}
+.no{
+  padding: .1875rem;
+}
+.map{
+  width: 845.48px;
+  height: 700px;
+  text-align: center;
+}
+/* 悬停添加箭头图标 */
+.niceButton5 {
+  display: inline-block;
+  position: absolute;
+  right: 50%;
+  border-radius: 20px;
+  background-color: rgb(15, 176, 240);
+  border: none;
+  color: #ffff;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  padding: 18px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  right: 0;
+  // vertical-align: middle;
+}
+.niceButton5 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.niceButton5 span::after {
+  content: ">";
+  position: absolute;
+  opacity: 0;
+  top: 5px;
+  right: -20px;
+  transition: 0.5s;
+}
+.niceButton5:hover span {
+  padding-right: 30px;
+}
+.niceButton5:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+.return{
+  padding: 0;
+}

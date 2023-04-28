@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+.rq {
+  width: 360px;
+  height: 450px;
+  margin: 0px 21px -10px;
+  border: 2px solid #fff;
+  padding: 40px;
+  right: 10px;
+}
+body,
+h3 {
+  margin: 0;
+  font-size: 20;
+  margin-bottom: 20px;
+}
+ul {
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+}
+.rq ul li {
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  border-bottom: 1px dotted #ddd;
+}
+.rq ul li a {
+  text-decoration: none;
+  color: #333;
+}
+.rq ul li a:hover {
+  color: red;
+}
+.rq ul li span {
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.col1 {
+  color: red;
+}
+.col2 {
+  color: #ff5c55;
+}
+.col3 {
+  color: #ffa552;
+}

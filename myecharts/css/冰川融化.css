@@ -1,0 +1,81 @@
+body {
+  background: url(../images/冰川融化1.jpg) no-repeat center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+@font-face {
+  font-family: electronicFont;
+  src: url(../font/DS-DIGIT.TTF);
+}
+.mainbox {
+  display: flex;
+  min-width: 1024px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0.01rem 0.01rem 0;
+}
+.mainbox .column {
+  flex: 0;
+}
+header {
+  position: relative;
+  height: 1.25rem;
+  background-size: 100% 100%;
+}
+header h1 {
+  font-size: 0.475rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1rem;
+}
+header .showTime {
+  position: absolute;
+  right: 0.375rem;
+  top: 0;
+  line-height: 0.9375rem;
+  color: #139913;
+  font-size: 0.25rem;
+  font-family: electronicFont;
+}
+.niceButton5 {
+  display: inline-block;
+  position: absolute;
+  right: 50%;
+  border-radius: 20px;
+  background-color: #0fb0f0;
+  border: none;
+  color: #ffff;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  padding: 18px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  right: 0;
+}
+.niceButton5 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.niceButton5 span::after {
+  content: ">";
+  position: absolute;
+  opacity: 0;
+  top: 5px;
+  right: -20px;
+  transition: 0.5s;
+}
+.niceButton5:hover span {
+  padding-right: 30px;
+}
+.niceButton5:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+.return {
+  padding: 0;
+}
